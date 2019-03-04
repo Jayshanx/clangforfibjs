@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 MAINTAINER Thomas Kent <docker@teeks99.com>
 
 ADD llvm.list /etc/apt/sources.list.d/
@@ -16,7 +16,7 @@ RUN apt-get update \
   build-essential \
 
 # Install Tool
-  clang-6.0 \
+  clang \
   libc++-dev \
   libc++abi-dev \
   cmake \
